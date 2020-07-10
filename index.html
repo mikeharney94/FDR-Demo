@@ -1,0 +1,147 @@
+<html>
+<head>	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="styles/general.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<style>
+	* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #08339c;
+  padding: 2rem 10px;
+}
+
+.header a {
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+@media(max-width:375px){
+	.hideMedium{
+		display:none;
+	}
+}
+
+@media(max-width:425px){
+	.hideLarge{
+		display:none;
+	}
+}
+	</style>
+</head>
+<body style="background-color:gray">
+		<!--<div id="background" style="background-color:gray;width:100%"></div>-->
+			<div id="mainContainer" style="text-align:center;margin:auto"><!--max-width:1000px-->
+				<div id="headerContainer" style="position:fixed;width:100%"><!--max-width:1000px-->
+				<div class="header">
+					<a href="pages/sample.html" target="mainFrame" class="logo">
+						<img height="30px" width="55px" style="margin-right:15px" src="images/logo.png"/>FDR Center
+						<fdr class="hideLarge" style="font-weight:normal;font-size:20px"> for Prosthetics & Orthotics</fdr>
+						<!--<img class="hideMedium" height="50px" width="150px" style="margin-left:15px" src="images/staff.png"/>-->
+					</a>
+					<div id="navbar-content" class="header-left">
+					</div>
+				</div>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+				  <a class="navbar-brand" href="pages/home.html" target="mainFrame">Home</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+	  
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item active">
+						<a class="nav-link pageNav" href="#">Directions</a>
+					  </li>
+					  <li class="nav-item active">
+						<a class="nav-link pageNav" href="#">Common Questions</a>
+					  </li>
+					  <li class="nav-item active">
+						<a class="nav-link pageNav" href="pages/contact_us.html" target="mainFrame">Contact Us</a>
+					  </li>
+					  <li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  About Us
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item pageNav" href="pages/staff.html" target="mainFrame">Meet the Staff</a>
+						  <a class="dropdown-item pageNav" href="#">About the Company</a>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item pageNav" href="pages/contact_us.html" target="mainFrame">Contact Us</a>
+						</div>
+					  </li>
+					  <li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  Media
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item pageNav"  href="pages/stories.html" target="mainFrame">Videos</a>
+						  <a class="dropdown-item pageNav"  href="pages/contact_us.html" target="mainFrame">Social Media</a>
+						</div>
+					  </li>
+					</ul>
+				  </div>
+				</nav>
+			</div>
+			<iframe id="mainFrame" name="mainFrame" src="pages/home.html" height="100%" width="100%" ></iframe>
+		</div>
+</body>
+<script>
+$('.dropdown-item').click(function(e){
+	collapseNavbar();
+});
+$('.pageNav').click(function(e){
+	collapseNavbar();
+});
+function collapseNavbar(){
+	var toggler = document.getElementsByClassName('navbar-toggler')[0];
+	if(toggler.offsetWidth){
+		toggler.click();
+	}
+}
+</script>
+</html>
